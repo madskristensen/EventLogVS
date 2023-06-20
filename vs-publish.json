@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json.schemastore.org/vsix-publish",
+  "categories": [ "documentation" ],
+  "identity": {
+    "internalName": "EventLog",
+    "tags": [ "log", "history", "timeline", "time", "events" ]
+  },
+  "assetFiles": [
+    {
+      "pathOnDisk": "art/options.png",
+      "targetPath": "art/options.png"
+    }
+  ],
+  "overview": "README.md",
+  "publisher": "MadsKristensen",
+  "repo": "https://github.com/MadsKristensen/EventLogVS"
+}
