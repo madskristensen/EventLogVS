@@ -21,13 +21,14 @@ namespace EventLogVS
         {
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-            OutputWindowPane pane = await VS.Windows.CreateOutputWindowPaneAsync("Event Log", true);
+            OutputWindowPane pane = await VS.Windows.CreateOutputWindowPaneAsync(Vsix.Name, true);
 
             await BuildProvider.InitializeAsync(pane);
             await CommandProvider.InitializeAsync(pane);
             await DebugProvider.InitializeAsync(pane);
             await DocumentProvider.InitializeAsync(pane);
             await ProjectItemProvider.InitializeAsync(pane);
+            await ShellProvider.InitializeAsync(pane);
             await SolutionProvider.InitializeAsync(pane);
             await WindowProvider.InitializeAsync(pane);
         }

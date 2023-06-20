@@ -52,5 +52,11 @@ namespace EventLogVS
         [Description("Show information from the tool windows events provider.")]
         [DefaultValue(false)]
         public bool EnableWindowsProvider { get; set; }
+
+        [Category("Providers")]
+        [DisplayName("Shell")]
+        [Description("Show information from the shell events provider.")]
+        [DefaultValue(false)]
+        public bool EnableShellProvider { get; set; }
     }
 }
