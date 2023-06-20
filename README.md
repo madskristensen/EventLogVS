@@ -2,7 +2,7 @@
 [vsixgallery]: http://vsixgallery.com/extension/EventLogVS.a9f6a6f5-4752-4c4d-a142-15340fc800af/
 [repo]:https://github.com/madskristensen/EventLogVS
 
-# EmojiSense for Visual Studio
+# Event Timeline for Visual Studio
 
 [![Build](https://github.com/madskristensen/EventLogVS/actions/workflows/build.yaml/badge.svg)](https://github.com/madskristensen/EventLogVS/actions/workflows/build.yaml)
 
