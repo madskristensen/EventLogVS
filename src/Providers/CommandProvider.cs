@@ -16,7 +16,34 @@ namespace EventLogVS.Providers
             "Debug.LocationToolbar.ThreadCombo",
             "Debug.LocationToolbar.StackFrameCombo",
             "Build.SolutionPlatforms",
-            "Build.SolutionConfigurations"
+            "Build.SolutionConfigurations",
+            "Edit.Delete",
+            "Edit.DeleteBackwards",
+            "Edit.Undo",
+            "Edit.Redo",
+            "Edit.Duplicate",
+            "Edit.Copy",
+            "Edit.Paste",
+            "Edit.Cut",
+            "Edit.CharLeft",
+            "Edit.CharLeftExtend",
+            "Edit.CharRight",
+            "Edit.CharRightExtend",
+            "Edit.SelectionCancel",
+            "Edit.LineDown",
+            "Edit.LineUp",
+            "Edit.LineEnd",
+            "Edit.LineUpExtend",
+            "Edit.LineStartExtend",
+            "Edit.LineStart",
+            "Edit.WordNext",
+            "Edit.WordNextExtend",
+            "Edit.WordPrevious",
+            "Edit.WordPreviousExtend",
+            "Edit.MoveSelectedLinesDown",
+            "Edit.MoveSelectedLinesUp",
+            "Edit.PageUp",
+            "Edit.PageDown",
         };
 
         public override string Name => "Command";
@@ -47,7 +74,7 @@ namespace EventLogVS.Providers
 
                 if (!string.IsNullOrWhiteSpace(cmd?.Name) && !ShouldCommandBeIgnored(cmd))
                 {
-                    WriteAsync("'" + cmd.Name + "' executing").FireAndForget();
+                    WriteAsync("'" + cmd.Name + "' invoked").FireAndForget();
                 }
             }
             catch (ArgumentException)
