@@ -44,6 +44,7 @@ namespace EventLogVS.Providers
             "Edit.MoveSelectedLinesUp",
             "Edit.PageUp",
             "Edit.PageDown",
+            "Edit.BreakLine",
         };
 
         public override string Name => "Command";

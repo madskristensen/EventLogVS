@@ -38,10 +38,16 @@ namespace EventLogVS
         public bool EnableDocumentProvider { get; set; } = true;
 
         [Category(_category)]
-        [DisplayName("Project items")]
-        [Description("Show information from the project items events provider.")]
+        [DisplayName("Project")]
+        [Description("Show information from the project events provider.")]
         [DefaultValue(true)]
-        public bool EnableProjectItemsProvider { get; set; } = true;
+        public bool EnableProjectProvider { get; set; } = true;
+
+        [Category(_category)]
+        [DisplayName("Publish")]
+        [Description("Show information from the publish events provider.")]
+        [DefaultValue(true)]
+        public bool EnablePublishProvider { get; set; } = true;
 
         [Category(_category)]
         [DisplayName("Solution")]
@@ -50,15 +56,15 @@ namespace EventLogVS
         public bool EnableSolutionProvider { get; set; } = true;
 
         [Category(_category)]
-        [DisplayName("Tool windows")]
-        [Description("Show information from the tool windows events provider.")]
-        [DefaultValue(false)]
-        public bool EnableWindowsProvider { get; set; }
-
-        [Category(_category)]
         [DisplayName("Shell")]
         [Description("Show information from the shell events provider.")]
         [DefaultValue(false)]
         public bool EnableShellProvider { get; set; }
+
+        [Category(_category)]
+        [DisplayName("Tool windows")]
+        [Description("Show information from the tool windows events provider.")]
+        [DefaultValue(false)]
+        public bool EnableWindowsProvider { get; set; }
     }
 }

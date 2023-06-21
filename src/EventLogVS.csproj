@@ -49,8 +49,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EventLogVSPackage.cs" />
     <Compile Include="Providers\BaseProvider.cs" />
+    <Compile Include="Providers\PublishProvider.cs" />
     <Compile Include="Providers\ShellProvider.cs" />
-    <Compile Include="Providers\ProjectItemProvider.cs" />
+    <Compile Include="Providers\ProjectProvider.cs" />
     <Compile Include="Providers\SolutionProvider.cs" />
     <Compile Include="Providers\DocumentProvider.cs" />
     <Compile Include="Providers\WindowProvider.cs" />

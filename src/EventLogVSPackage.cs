@@ -27,7 +27,8 @@ namespace EventLogVS
             await CommandProvider.InitializeAsync(pane);
             await DebugProvider.InitializeAsync(pane);
             await DocumentProvider.InitializeAsync(pane);
-            await ProjectItemProvider.InitializeAsync(pane);
+            await ProjectProvider.InitializeAsync(pane);
+            await PublishProvider.InitializeAsync(pane);
             await ShellProvider.InitializeAsync(pane);
             await SolutionProvider.InitializeAsync(pane);
             await WindowProvider.InitializeAsync(pane);
