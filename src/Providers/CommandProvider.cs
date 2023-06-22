@@ -45,6 +45,7 @@ namespace EventLogVS.Providers
             "Edit.PageUp",
             "Edit.PageDown",
             "Edit.BreakLine",
+            "OutputVerbosity",
         };
 
         public override string Name => "Command";
